@@ -1,0 +1,24 @@
+E:\Program Files (x86)\GitHub\TextBase\TextBase\TextBase\bin\Debug\TextBase.exe.config
+E:\Program Files (x86)\GitHub\TextBase\TextBase\TextBase\bin\Debug\TextBase.exe
+E:\Program Files (x86)\GitHub\TextBase\TextBase\TextBase\bin\Debug\TextBase.pdb
+E:\Program Files (x86)\GitHub\TextBase\TextBase\TextBase\obj\Debug\TextBase.csprojAssemblyReference.cache
+E:\Program Files (x86)\GitHub\TextBase\TextBase\TextBase\obj\Debug\TextBase.Form1.resources
+E:\Program Files (x86)\GitHub\TextBase\TextBase\TextBase\obj\Debug\TextBase.Form2.resources
+E:\Program Files (x86)\GitHub\TextBase\TextBase\TextBase\obj\Debug\TextBase.Form3.resources
+E:\Program Files (x86)\GitHub\TextBase\TextBase\TextBase\obj\Debug\TextBase.Properties.Resources.resources
+E:\Program Files (x86)\GitHub\TextBase\TextBase\TextBase\obj\Debug\TextBase.csproj.GenerateResource.cache
+E:\Program Files (x86)\GitHub\TextBase\TextBase\TextBase\obj\Debug\TextBase.csproj.CoreCompileInputs.cache
+E:\Program Files (x86)\GitHub\TextBase\TextBase\TextBase\obj\Debug\TextBase.exe
+E:\Program Files (x86)\GitHub\TextBase\TextBase\TextBase\obj\Debug\TextBase.pdb
+C:\Users\Днс\Desktop\TextBase2.0\TextBase\bin\Debug\TextBase.exe.config
+C:\Users\Днс\Desktop\TextBase2.0\TextBase\bin\Debug\TextBase.exe
+C:\Users\Днс\Desktop\TextBase2.0\TextBase\bin\Debug\TextBase.pdb
+C:\Users\Днс\Desktop\TextBase2.0\TextBase\obj\Debug\TextBase.csprojAssemblyReference.cache
+C:\Users\Днс\Desktop\TextBase2.0\TextBase\obj\Debug\TextBase.Form1.resources
+C:\Users\Днс\Desktop\TextBase2.0\TextBase\obj\Debug\TextBase.Form2.resources
+C:\Users\Днс\Desktop\TextBase2.0\TextBase\obj\Debug\TextBase.Form3.resources
+C:\Users\Днс\Desktop\TextBase2.0\TextBase\obj\Debug\TextBase.Properties.Resources.resources
+C:\Users\Днс\Desktop\TextBase2.0\TextBase\obj\Debug\TextBase.csproj.GenerateResource.cache
+C:\Users\Днс\Desktop\TextBase2.0\TextBase\obj\Debug\TextBase.csproj.CoreCompileInputs.cache
+C:\Users\Днс\Desktop\TextBase2.0\TextBase\obj\Debug\TextBase.exe
+C:\Users\Днс\Desktop\TextBase2.0\TextBase\obj\Debug\TextBase.pdb
