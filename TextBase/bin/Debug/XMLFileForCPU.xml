@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CPUs>
-  <Ryzen_7_2700X vendor="" date="11.05.2019 0:23:49" soket="" cores="" threads="" Base_frequncy="AMD" Cash_1_level="64x64" Cash_2_level="128x128" Cash_3_level="256x256" />
-  <i5-6800K vendor="Intel" date="11.05.2019 0:52:58" soket="1115" cores="8" threads="16" Base_frequncy="5" Cash_1_level="123" Cash_2_level="123" Cash_3_level="123" />
+  <cpu vendor="AMD" name="rty" date="23.05.2019 1:37:05" soket="1" cores="1" threads="1" Base_frequncy="1" Cash_1_level="1" Cash_2_level="1" Cash_3_level="1" />
 </CPUs>

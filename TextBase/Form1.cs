@@ -23,7 +23,7 @@ namespace TextBase
 
             foreach (XmlElement xnode in xRoot)
             {
-                listBox1.Items.Add(xnode.Name);
+                listBox1.Items.Add(xnode.Attributes.GetNamedItem("name").Value);
             }
 
             XmlDocument xDocA = new XmlDocument();
@@ -32,7 +32,7 @@ namespace TextBase
 
             foreach (XmlElement xnode in xRootA)
             {
-                listBox2.Items.Add(xnode.Name);
+                listBox2.Items.Add(xnode.Attributes.GetNamedItem("name").Value);
             }
         }
         

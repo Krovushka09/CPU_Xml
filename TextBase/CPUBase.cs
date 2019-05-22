@@ -18,12 +18,12 @@ namespace TextBase
 
             foreach (XmlElement xnode in xRoot)
             {
-                    if (xnode.Name == name)
+                    if (xnode.Attributes.GetNamedItem("name").Value == name)
                     {
                     xRoot.RemoveChild(xnode);
                     if (x == true) xDoc.Save("XMLFileForCPU.xml");
                     else xDoc.Save("XMLFileForArticle.xml");
-                }
+                    }
             }
         }
         public static void CpuToXML(Vendor nameV, DateTime date, string nameCPU, string soket, int nCores, int nThreards, double nFrequency, string sc1, string sc2, string sc3)
@@ -32,11 +32,11 @@ namespace TextBase
             xDoc.Load("XMLFileForCPU.xml");
             XmlElement xRoot = xDoc.DocumentElement;
             // создаем новый элемент user
-            XmlElement cpuElem = xDoc.CreateElement(nameCPU);
+            XmlElement cpuElem = xDoc.CreateElement("cpu");
             // создаем атрибут name
             XmlAttribute vendorCpu = xDoc.CreateAttribute("vendor");
             XmlAttribute dateRealased = xDoc.CreateAttribute("date");
-            /*XmlAttribute nameCpu = xDoc.CreateAttribute("name");*/
+            XmlAttribute nameCpu = xDoc.CreateAttribute("name");
             XmlAttribute nameSoket = xDoc.CreateAttribute("soket");
             XmlAttribute cores = xDoc.CreateAttribute("cores");
             XmlAttribute threads = xDoc.CreateAttribute("threads");
@@ -47,7 +47,7 @@ namespace TextBase
             // создаем текстовые значения для элементов и атрибута
             XmlText textVendor = xDoc.CreateTextNode(Convert.ToString(nameV));
             XmlText textDateRealased = xDoc.CreateTextNode(Convert.ToString(date));
-            /*XmlText textNameCpu = xDoc.CreateTextNode(Convert.ToString(nameCPU));*/
+            XmlText textNameCpu = xDoc.CreateTextNode(Convert.ToString(nameCPU));
             XmlText textNameSoket = xDoc.CreateTextNode(Convert.ToString(soket));
             XmlText textCores = xDoc.CreateTextNode(Convert.ToString(nCores));
             XmlText textThreads = xDoc.CreateTextNode(Convert.ToString(nThreards));
@@ -59,7 +59,7 @@ namespace TextBase
             //добавляем узлы
             vendorCpu.AppendChild(textVendor);
             dateRealased.AppendChild(textDateRealased);
-            /*nameCpu.AppendChild(textVendor);*/
+            nameCpu.AppendChild(textNameCpu);
             nameSoket.AppendChild(textNameSoket);
             cores.AppendChild(textCores);
             threads.AppendChild(textThreads);
@@ -68,6 +68,7 @@ namespace TextBase
             sc2Level.AppendChild(textLevel2);
             sc3Level.AppendChild(textLevel3);
             cpuElem.Attributes.Append(vendorCpu);
+            cpuElem.Attributes.Append(nameCpu);
             cpuElem.Attributes.Append(dateRealased);
             cpuElem.Attributes.Append(nameSoket);
             cpuElem.Attributes.Append(cores);
@@ -120,14 +121,15 @@ namespace TextBase
             xDoc.Load("XMLFileForArticle.xml");
             XmlElement xRoot = xDoc.DocumentElement;
             // создаем новый элемент user
-            XmlElement cpuElem = xDoc.CreateElement(head);
+            XmlElement cpuArt = xDoc.CreateElement("artilce");
             // создаем атрибут name
             XmlAttribute datePublication = xDoc.CreateAttribute("date");
-            /*XmlAttribute nameCpu = xDoc.CreateAttribute("name");*/
+            XmlAttribute nameArt = xDoc.CreateAttribute("name");
             XmlAttribute artType= xDoc.CreateAttribute("article_type");
             XmlAttribute textT = xDoc.CreateAttribute("text");
             // создаем текстовые значения для элементов и атрибута
             XmlText textDate = xDoc.CreateTextNode(Convert.ToString(date));
+            XmlText nameofArt = xDoc.CreateTextNode(head);
             XmlText textArtType = xDoc.CreateTextNode(Convert.ToString(typeArt));
             XmlText textText = xDoc.CreateTextNode(Convert.ToString(text));
 
@@ -135,10 +137,12 @@ namespace TextBase
             datePublication.AppendChild(textDate);
             artType.AppendChild(textArtType);
             textT.AppendChild(textText);
-            cpuElem.Attributes.Append(datePublication);
-            cpuElem.Attributes.Append(artType);
-            cpuElem.Attributes.Append(textT);
-            xRoot.AppendChild(cpuElem);
+            nameArt.AppendChild(nameofArt);
+            cpuArt.Attributes.Append(datePublication);
+            cpuArt.Attributes.Append(nameArt);
+            cpuArt.Attributes.Append(artType);
+            cpuArt.Attributes.Append(textT);
+            xRoot.AppendChild(cpuArt);
             xDoc.Save("XMLFileForArticle.xml");
         }
         /// <summary>
